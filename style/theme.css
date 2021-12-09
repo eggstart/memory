@@ -1,0 +1,242 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: 'Space Mono', monospace */
+  /* font-family: 'DM Mono', monospace; */
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Helvetica', monospace;
+  font-weight: 200;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; */
+
+}
+
+/* DEFINITION STYLING */
+
+.name {
+  font-size: 200%;
+}
+
+.speech {
+  font-style: oblique;
+  color:gray;
+}
+
+.off {
+  font-weight: bold;
+}
+
+.mouseoverWord {
+  cursor:pointer;
+  padding: .25%;
+}
+
+.mouseoverWord:hover {
+  background-color: lavender;
+}
+
+.letter {
+  cursor:pointer;
+}
+
+#regards {
+  font-style: italic;
+  color: gray;
+}
+
+img {
+  max-width: 5%;
+  height: auto;
+  margin-right:3%;
+}
+
+
+b {
+  font-weight: 500;
+}
+
+.section {
+  min-height: 80vh;
+}
+
+a {
+  color: black;
+  font-family: 'DM Mono', monospace;
+  /* font-size: 80%; */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.my-name {
+  font-size: 150%;
+  font-style: italic;
+  font-weight: 800;
+  font-family: 'DM Mono', monospace;
+  padding:0px;
+  height:25px;
+
+}
+
+
+.material-icons {
+  font-size: var(--bs-body-font-size);
+}
+
+.row-span {
+  display:flex;
+  flex-direction: row;
+}
+
+footer {
+  font-family: 'DM Mono', monospace;
+  font-size: 70%;
+  /* position: absolute; */
+  bottom: 2.5rem;
+  width: 100%;
+  height: 2.5rem;  
+  font-weight: 200;
+  color:gray;
+
+
+  position: fixed;
+  left: 0;
+  bottom: 2;
+  width: 100%;
+}
+
+.caption {
+  font-size: 80%;
+  color: gray;
+}
+
+
+.header {
+  color: black;
+  font-family: 'DM Mono', monospace;
+  font-weight: bold;
+  padding-top:2%;
+  font-size: larger;
+}
+
+/* writing */
+h2 {
+  font-family: 'Helvetica', monospace;
+  font-weight:200;
+}
+
+.container-med {
+  width: 80%;
+margin:auto;
+
+}
+
+/* .thoughtCont {
+  width: 80%;
+} */
+
+a:hover {
+  /* text-decoration: underline; */
+  color:gray;
+}
+
+h3{
+  font-family: 'Helvetica', monospace;
+  font-weight: 200;
+  font-size: 200%;
+}
+
+.index h3{
+  font-family: 'Helvetica', monospace;
+  font-weight: 200;
+  font-size: 150%;
+}
+
+h2 {
+  margin-bottom: 2%;
+}
+
+/* FORM */
+textarea {
+  resize: none;
+  width: 100%; 
+  max-width: 100%;
+  padding: 2%;
+}
+
+.formContainer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 5%;
+  width: 80%; 
+  margin: auto;
+}
+
+
+#left{
+  float:left;
+}
+#right{
+  float:right;
+}
+
+/* courtesy of https://blog.hubspot.com/website/css-fade-in */
+
+.fade-in-text {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+.fade-in-text1 {
+  animation: fadeIn linear .75s;
+  -webkit-animation: fadeIn linear .75s;
+  -moz-animation: fadeIn linear .75s;
+  -o-animation: fadeIn linear .75s;
+  -ms-animation: fadeIn linear .75s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.btn {
+  background-color: white;
+
+}
+
+button {
+  background-color: white;
+}

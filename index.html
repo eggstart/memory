@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>a note on memory</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=Space+Mono:ital@1&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Mono:ital@0;1&family=Space+Mono:ital@1&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style/theme.css" media="all"/>
+</head>
+  <header>
+    <section id="nav-bar">
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg navbar-light  container">
+          <!--bg-light-->
+          <div class="container-fluid">
+            <a class="navbar-brand my-name" href="index.html">A NOTE ON MEMORY</a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="info.html">INFO</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- NAVBAR END -->
+      </section>
+  </header>
+  <body>
+   <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  <div class="container">
+  <p></p>
+  <p>what does the end of time bring to mind?</p>
+  <p></p>
+  <div class="container" style= "display: flex; flex-direction: row;">
+    <div class="thoughtCont" style="width:110%; padding-right: 20%;">
+      <p id="thoughts"></p>
+      <p id="regards"></p>
+    </div>
+    <div class="wordCont container">
+      <p id="wordName" class="name"></p>
+      <p id="wordSpeech" class="speech"></p>
+      <p id="wordDef" class="def"></p]>
+      <p id="wordOff" class="off"></p>
+    </div>
+  </div>
+
+  <!-- FORM BEGIN -->
+  <!-- <form id="form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate> -->
+    <div class="formContainer">
+    <div class="container" style= "display: flex; flex-direction: row;">
+      <img src="images/letter-closed.png" alt="letter closed" id="letterAureliano" class="letter"/>
+      <img src="images/letter-closed.png" alt="letter closed" id="letterNarrator" class="letter"/>
+      <img src="images/letter-closed.png" alt="letter closed" id="letterWenjie" class="letter"/>
+    </div>
+
+    <form>
+      <div class="vertical">
+            <label></label>
+            <!-- <textarea placeholder="A note to self..." name="textarea" rows="5" cols="100vw" maxlength="250" id="textareaResponse" ></textarea> -->
+            <textarea id="textareaResponse" maxlength="250"></textarea>
+      </div>
+      <button type="button" id="ponder-btn">ponder</button>
+    </form>
+  </div>
+
+<p id="test"></p>
+
+<script src="script.js"></script>
+
+
+</body>
+<!-- FOOTER START -->
+<footer>
+    <div class="container">
+      <hr>
+      <em id="left">RENEE HOH/2021</em>
+      <em id="right">THANKS FOR SCROLLING!</em>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+</html>
