@@ -18,13 +18,17 @@ body {
 
   /* font-family: 'Cormorant Garamond', serif; */
   /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; */
-
 }
 
 /* DEFINITION STYLING */
 
 .name {
   font-size: 200%;
+}
+
+.instructions {
+  font-size: 80%;
+  font-style: italic;
 }
 
 .speech {
@@ -72,10 +76,14 @@ textarea::placeholder {
   color: gray;
 }
 
+.jotContainer {
+  width: 100%;
+}
+
 img {
-  max-width: 5%;
+  max-width: 10%;
   height: auto;
-  margin-right:2%;
+  margin-right:3%;
   margin-bottom: 2%;
 }
 
@@ -147,6 +155,10 @@ footer {
   font-size: larger;
 }
 
+header {
+  padding-bottom: 40px;
+}
+
 /* writing */
 h2 {
   font-family: 'Helvetica', monospace;
@@ -155,7 +167,7 @@ h2 {
 
 .container-med {
   width: 80%;
-margin:auto;
+  margin:auto;
 
 }
 
@@ -187,18 +199,23 @@ h2 {
 /* FORM */
 textarea {
   resize: none;
-  width: 50%; 
+  width: 100%; 
   max-width: 100%;
   padding: 2%;
   border: lightgray solid 1px;
+  height:auto;
 }
 
 .formContainer {
   position: fixed;
   bottom: 0;
-  padding-bottom: 5%;
-  width: 80%; 
+  padding-bottom: 3%;
+  width: 100%; 
   margin: auto;
+}
+
+label {
+  margin-bottom: 15px;
 }
 
 

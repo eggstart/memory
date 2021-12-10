@@ -15,6 +15,7 @@ $("#ponder-btn").click(function () {
     var data = document.getElementById('textareaResponse').value;
     if (data != "") {
         open(data);
+        document.getElementById("regards").innerHTML = "Sincerely, Internet Stranger";
     }
 })
 
@@ -42,7 +43,7 @@ $("#letterAureliano").click(function () {
 //    if (imageID.src.match("images/letter-closed.png")) {
     imageID.src = "images/letter-open.png";
     // }  
-    document.getElementById("regards").innerHTML = "With Gratitude, Aureliano";
+    document.getElementById("regards").innerHTML = "With Gratitude, Colonel Aureliano Buendía";
 })
 
 $("#letterNarrator").click(function () {
@@ -158,6 +159,17 @@ function define(word, ifScramble, name) {
             newName.appendChild(node0);
             const element0 = document.getElementById("wordName");
             element0.appendChild(newName);
+        } else {
+            var currName = document.getElementById("wordName").innerHTML;
+            if (currName === 'this defintion doesn\'t exist <em>yet</em>') {
+                document.getElementById("wordName").innerHTML = "";
+                const newName = document.createElement("span");
+                newName.setAttribute("id", "wordNameSpan");
+                const node0 = document.createTextNode(name.toLowerCase());
+                newName.appendChild(node0);
+                const element0 = document.getElementById("wordName");
+                element0.appendChild(newName);
+            }
         }
 
         wordDef.forEach((d,i) => {
@@ -190,6 +202,7 @@ function define(word, ifScramble, name) {
     } else {
         if (ifScramble === false) {
             document.getElementById("wordName").innerHTML = "this defintion doesn't exist <em>yet</em>";
+            document.getElementById("wordDef").innerHTML = "Click on the word to find new meaning.";
         } else {
             // CONTINUE UNTIL WORD WITH DEFINITION
             randomWord = $.getJSON(`https://random-word-api.herokuapp.com/word?number=1`, function(result){

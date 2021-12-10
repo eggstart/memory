@@ -43,63 +43,60 @@
         <!-- NAVBAR END -->
       </section>
   </header>
+
+
   <body>
    <!-- boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
   <div class="container">
-  <p></p>
-  <p>record a fond memory</p>
-  <p></p>
-  <div class="container" style= "display: flex; flex-direction: row;">
-    <div class="thoughtCont" style="width:110%; padding-right: 20%;">
-      <p id="thoughts"></p>
-      <p id="regards"></p>
-    </div>
-    <div class="wordCont container">
-      <p id="wordName" class="name">Create or open a note. Hover over the words to find meaning.</p>
-      <p id="wordSpeech" class="speech"></p>
-      <p id="wordDef" class="def"></p]>
-      <p id="wordOff" class="off"></p>
+    <p></p>
+    <p></p>
+    <div class="container" style= "display: flex; flex-direction: row;">
+      <div class="thoughtCont" style="width:110%; padding-right: 15%;">
+        <p id="thoughts"></p>
+        <p id="regards"></p>
+      </div>
+      <div class="wordCont container">
+        <p id="wordName" class="name"></p>
+        <p id="wordSpeech" class="speech"></p>
+        <p id="wordDef" class="def"></p]>
+        <p id="wordOff" class="off"></p>
+      </div>
     </div>
   </div>
 
   <!-- FORM BEGIN -->
-  <!-- <form id="form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate> -->
-    <div class="formContainer">
-    <div class="container" style= "display: flex; flex-direction: row;">
-      <img src="images/letter-closed.png" alt="letter closed" id="letterAureliano" class="letter"/>
-      <img src="images/letter-closed.png" alt="letter closed" id="letterNarrator" class="letter"/>
-      <img src="images/letter-closed.png" alt="letter closed" id="letterWenjie" class="letter"/>
-    </div>
-
-    <form>
-      <div class="vertical">
-            <label></label>
-            <!-- <textarea placeholder="A note to self..." name="textarea" rows="5" cols="100vw" maxlength="250" id="textareaResponse" ></textarea> -->
-            <textarea id="textareaResponse" maxlength="250" placeholder="  Write something brilliant here..."></textarea>
+    <div class="formContainer" style= "display: flex; flex-direction: row;">
+      <div class="container">
+        <form>
+          <div class="container jotContainer" style= "display: flex; flex-direction: column;">
+              <label class="instructions">Jot down a fond memory. <span class="mouseoverWord">Hover</span> over words to find meaning. <span class="mouseoverScramble">Click</span> on words to find new meaning.</label>
+              <textarea id="textareaResponse" maxlength="200" placeholder="Write something brilliant here..."></textarea>
+              <button type="button" id="ponder-btn">Jot Down</button>
+          </div>
+        </form>
+     </div>
+      <div>
+        <p class="instructions">Feeling shy? Open an existing note.</p>
+        <div class="container" style= "display: flex; flex-direction: row;">
+          <img src="images/letter-closed.png" alt="letter closed" id="letterAureliano" class="letter"/>
+          <img src="images/letter-closed.png" alt="letter closed" id="letterNarrator" class="letter"/>
+          <img src="images/letter-closed.png" alt="letter closed" id="letterWenjie" class="letter"/>
+        </div>
       </div>
-      <button type="button" id="ponder-btn">jot down this thought</button>
-      <!-- <button type="button" id="scramble-btn">scramble these thoughts</button> -->
-
-    </form>
-  </div>
-
-<p id="test"></p>
-
-<script src="script.js"></script>
+    </div>
+  <script src="script.js"></script>
 
 
 </body>
 <!-- FOOTER START -->
-<footer>
+<!-- <footer>
     <div class="container">
       <hr>
       <em id="left">RENEE HOH/2021</em>
       <em id="right">THANKS FOR SCROLLING!</em>
     </div>
-  </footer>
+  </footer> -->
   <!-- FOOTER END -->
 
 </html>
