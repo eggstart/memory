@@ -33,16 +33,34 @@ body {
 }
 
 .off {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .mouseoverWord {
   cursor:pointer;
-  padding: .25%;
+  /* padding: .1%; */
 }
 
 .mouseoverWord:hover {
   background-color: lavender;
+}
+
+.mouseoverScramble {
+  cursor:pointer;
+  /* padding: .1%; */
+}
+
+.mouseoverScramble:hover {
+  background-color: lightsalmon;
+}
+
+textarea::placeholder {
+  color: lightgray;  
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#thoughts {
+  font-size: 200%;
 }
 
 .letter {
@@ -57,7 +75,8 @@ body {
 img {
   max-width: 5%;
   height: auto;
-  margin-right:3%;
+  margin-right:2%;
+  margin-bottom: 2%;
 }
 
 
@@ -168,9 +187,10 @@ h2 {
 /* FORM */
 textarea {
   resize: none;
-  width: 100%; 
+  width: 50%; 
   max-width: 100%;
   padding: 2%;
+  border: lightgray solid 1px;
 }
 
 .formContainer {
@@ -239,4 +259,17 @@ textarea {
 
 button {
   background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  color: gray;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: lavender;
+  border: solid lavender 1px;
 }
