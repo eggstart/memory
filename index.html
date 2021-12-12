@@ -10,6 +10,8 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
+
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
@@ -51,12 +53,12 @@
   <div class="container">
     <p></p>
     <p></p>
-    <div class="container" style= "display: flex; flex-direction: row;">
+    <div class="container display-row">
       <div class="thoughtCont" style="width:110%; padding-right: 15%;">
         <p id="thoughts"></p>
         <p id="regards"></p>
       </div>
-      <div class="wordCont container">
+      <div class="wordCont container .fade-in-text">
         <p id="wordName" class="name"></p>
         <p id="wordSpeech" class="speech"></p>
         <p id="wordDef" class="def"></p]>
@@ -66,7 +68,8 @@
   </div>
 
   <!-- FORM BEGIN -->
-    <div class="formContainer" style= "display: flex; flex-direction: row;">
+  <div class="actionCont">
+    <div class="formContainer display-row">
       <div class="container">
         <form>
           <div class="container jotContainer" style= "display: flex; flex-direction: column;">
@@ -76,19 +79,20 @@
           </div>
         </form>
      </div>
-      <div>
-        <p class="instructions">Feeling shy? Open an existing note.</p>
-        <div class="container" style= "display: flex; flex-direction: row;">
+      <div class="container open-letters">
+        <p class="instructions">Feeling shy? Open an existing memory.</p>
+        <div class="container letters" style= "display: flex; flex-direction: row;">
           <img src="images/letter-closed.png" alt="letter closed" id="letterAureliano" class="letter"/>
           <img src="images/letter-closed.png" alt="letter closed" id="letterNarrator" class="letter"/>
           <img src="images/letter-closed.png" alt="letter closed" id="letterWenjie" class="letter"/>
         </div>
       </div>
     </div>
+  </div>
   <script src="script.js"></script>
-
-
+  </div>
 </body>
+
 <!-- FOOTER START -->
 <!-- <footer>
     <div class="container">

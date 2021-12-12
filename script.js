@@ -7,6 +7,13 @@ const letterNarrator = document.getElementById('letterNarrator');
 const letterWenjie = document.getElementById('letterWenjie');
 // var letterAurelianoOpen = false;
 
+// DISPLAY INSTRUCTIONS ON PAGE LOAD
+window.onload = function() {
+    refresh();
+    var message = "Record a fond memory or open an existing memory"
+    open(message);
+    document.getElementById("regards").innerHTML = "What does the end of time mean to you?";  
+};
 
 // CREATE NOTE
 $("#ponder-btn").click(function () {
@@ -105,7 +112,7 @@ function open(message) {
     })
 }
 
-// HELPER - CHANGE LETTER
+// HELPER - CHANGE LETTER IMAGE
 function imgChange(id) {
     var imageID = document.getElementById(id);
     if (imageID.src.match("images/letter-closed.png")) {
@@ -116,7 +123,7 @@ function imgChange(id) {
     }
 } 
 
-// HELPER - RESET LETTERS
+// HELPER - RESET LETTER IMAGES
 function imgReset() {
     ['letterAureliano', 'letterNarrator', 'letterWenjie'].forEach((d) => {
     var imageID = document.getElementById(d);
@@ -126,7 +133,7 @@ function imgReset() {
     })
 } 
 
-// HELPER - REFRESH THOUGHTS
+// HELPER - REFRESH THOUGHTS AND LETTER IMAGES
 function refresh() {
     imgReset()
     document.getElementById("thoughts").innerHTML = "";
