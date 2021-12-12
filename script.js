@@ -55,7 +55,7 @@ $("#letterAureliano").click(function () {
 
 $("#letterNarrator").click(function () {
     refresh();
-    var message = "A single white bird taking flight. The bird wings over the Wall and into the flurried clouds of the southern sky."
+    var message = "I see a single white bird take flight. The bird wings over the Wall and into the flurried clouds of the southern sky."
     open(message);
     imgChange('letterNarrator');
     document.getElementById("regards").innerHTML = "Warmly, The Dreamreader";
@@ -63,7 +63,7 @@ $("#letterNarrator").click(function () {
 
 $("#letterWenjie").click(function () {
     refresh();
-    var message = "The ruddy sun dissolved into the clouds and spread over the sky, illuminating a large patch in magnificent blood –– my sunset."
+    var message = "The ruddy sun dissolved into the clouds and spread over the sky, illuminating a large patch in magnificent, bloody red. My sunset."
     open(message);
     imgChange('letterWenjie');
     document.getElementById("regards").innerHTML = "Regards, Ye Wenjie";
