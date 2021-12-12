@@ -63,7 +63,7 @@ $("#letterNarrator").click(function () {
 
 $("#letterWenjie").click(function () {
     refresh();
-    var message = "Any idea that dared to take flight would only crash back to the ground. The gravity of reality is too strong."
+    var message = "The ruddy sun dissolved into the clouds and spread over the sky, illuminating a large patch in magnificent blood –– my sunset."
     open(message);
     imgChange('letterWenjie');
     document.getElementById("regards").innerHTML = "Regards, Ye Wenjie";
