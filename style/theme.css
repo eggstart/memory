@@ -115,9 +115,9 @@ b {
 
 a {
   color: black;
-  font-family: 'DM Mono', monospace;
+  /* font-family: 'DM Mono', monospace; */
   /* font-size: 80%; */
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -329,8 +329,24 @@ button:hover {
   border: solid lavender 1px;
 }
 
+#info {
+  width: 40%;
+  margin:auto;
+  text-align: justify;
+}
+
+#info p {
+  line-height: 200%;
+  font-size: 90%;
+}
+
+#info h1 {
+  margin-bottom: 3%;
+  font-weight: 400;
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
   .display-row {
     flex-direction: column;
@@ -372,6 +388,10 @@ button:hover {
     text-align: center;
   }
 
+  #wordDef, #wordOff, #wordSpeech {
+    font-size: 80%;
+  }
+
   button {
     background-color: white;
     padding-left: 10px;
@@ -394,6 +414,21 @@ button:hover {
   p {
     margin-bottom: 0px;
   }
+
+  #regards {
+    margin-bottom: 10%;
+  }
+
+  .wordCont {
+    z-index: -3;
+  }
+
+  #info {
+    font-size: 80%;
+    width: 80%
+  }
+
+
 
 }
 

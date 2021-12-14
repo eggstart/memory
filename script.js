@@ -12,7 +12,7 @@ window.onload = function() {
     refresh();
     var message = "Record a fond memory or open an existing memory"
     open(message);
-    document.getElementById("regards").innerHTML = "What does the end of time mean to you?";  
+    document.getElementById("regards").innerHTML = "What will you remember at the end of time?";  
 };
 
 // CREATE NOTE
@@ -55,10 +55,10 @@ $("#letterAureliano").click(function () {
 
 $("#letterNarrator").click(function () {
     refresh();
-    var message = "I see a single white bird take flight. The bird wings over the Wall and into the flurried clouds of the southern sky."
+    var message = "Through the driving snow, I see a single white bird take flight. The bird wings over the Wall and into the flurried clouds of the southern sky."
     open(message);
     imgChange('letterNarrator');
-    document.getElementById("regards").innerHTML = "Warmly, The Dreamreader";
+    document.getElementById("regards").innerHTML = "Warmly, the Dreamreader";
 })
 
 $("#letterWenjie").click(function () {
