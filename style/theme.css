@@ -1,0 +1,451 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: 'Space Mono', monospace */
+  /* font-family: 'DM Mono', monospace; */
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Helvetica', monospace;
+  font-weight: 200;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+  background-color: white;
+
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; */
+}
+
+/* DEFINITION STYLING */
+
+.name {
+  font-size: 200%;
+}
+
+.unscrambled {
+  background-color: lavender;
+}
+
+.instructions {
+  font-size: 80%;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.speech {
+  font-style: oblique;
+  color:gray;
+}
+
+.off {
+  font-weight: 500;
+}
+
+.mouseoverWord {
+  cursor:pointer;
+  /* padding: .1%; */
+}
+
+.mouseoverWord:hover {
+  background-color: lavender;
+  /* font-family: 'Cormorant Garamond', serif; */
+}
+
+.mouseoverScramble:hover {
+  background-color: lightsalmon;
+}
+
+.mouseoverScramble {
+  cursor:pointer;
+  /* padding: .1%; */
+}
+
+.mouseoverScramble:hover, #wordNameSpanScrambled {
+  background-color: lightsalmon;
+}
+
+
+textarea::placeholder {
+  color: lightgray;  
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#thoughts {
+  font-size: 200%;
+}
+
+.letter {
+  cursor:pointer;
+}
+
+#regards {
+  font-style: italic;
+  color: gray;
+}
+
+.jotContainer {
+  width: 100%;
+}
+
+.display-row {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  max-width: 10%;
+  height: auto;
+  margin-right:3%;
+  margin-bottom: 2%;
+}
+
+
+b {
+  font-weight: 500;
+}
+
+.section {
+  min-height: 80vh;
+}
+
+a {
+  color: black;
+  /* font-family: 'DM Mono', monospace; */
+  /* font-size: 80%; */
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.my-name {
+  font-size: 150%;
+  font-style: italic;
+  font-weight: 800;
+  font-family: 'DM Mono', monospace;
+  padding:0px;
+  height:25px;
+  background-color: lavender;
+}
+
+.nav-link {
+  font-style: italic;
+}
+
+.scrambled {
+  background-color: lightsalmon;
+}
+
+.material-icons {
+  font-size: var(--bs-body-font-size);
+}
+
+.row-span {
+  display:flex;
+  flex-direction: row;
+}
+
+footer {
+  font-family: 'DM Mono', monospace;
+  font-size: 70%;
+  /* position: absolute; */
+  bottom: 2.5rem;
+  width: 100%;
+  height: 2.5rem;  
+  font-weight: 200;
+  color:gray;
+
+
+  position: fixed;
+  left: 0;
+  bottom: 2;
+  width: 100%;
+}
+
+.caption {
+  font-size: 80%;
+  color: gray;
+}
+
+
+.header {
+  color: black;
+  font-family: 'DM Mono', monospace;
+  font-weight: bold;
+  padding-top:2%;
+  font-size: larger;
+}
+
+header {
+  padding-bottom: 40px;
+}
+
+/* writing */
+h2 {
+  font-family: 'Helvetica', monospace;
+  font-weight:200;
+}
+
+.container-med {
+  width: 80%;
+  margin:auto;
+
+}
+
+/* .thoughtCont {
+  width: 80%;
+} */
+
+a:hover {
+  /* text-decoration: underline; */
+  color:gray;
+}
+
+h3{
+  font-family: 'Helvetica', monospace;
+  font-weight: 200;
+  font-size: 200%;
+}
+
+.index h3{
+  font-family: 'Helvetica', monospace;
+  font-weight: 200;
+  font-size: 150%;
+}
+
+h2 {
+  margin-bottom: 2%;
+}
+
+/* FORM */
+textarea {
+  resize: none;
+  width: 100%; 
+  max-width: 100%;
+  padding: 2%;
+  border: lightgray solid 1px;
+  height:auto;
+}
+
+.formContainer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 3%;
+  width: 100%; 
+  margin: auto;
+  margin-left: 10%;
+}
+
+label {
+  margin-bottom: 15px;
+}
+
+.actionCont {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 215px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.48), 0 3px 6px rgba(0,0,0,0.23);
+  /* background-color: #FAF9F6; */
+  background-color: #FAFAFF;
+  z-index: -3;
+}
+
+
+#left{
+  float:left;
+}
+#right{
+  float:right;
+}
+
+/* courtesy of https://blog.hubspot.com/website/css-fade-in */
+
+.fade-in-text {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+.fade-in-text1 {
+  animation: fadeIn linear .75s;
+  -webkit-animation: fadeIn linear .75s;
+  -moz-animation: fadeIn linear .75s;
+  -o-animation: fadeIn linear .75s;
+  -ms-animation: fadeIn linear .75s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.btn {
+  background-color: white;
+
+}
+
+button {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  color: gray;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: WhiteSmoke;
+  border: solid lavender 1px;
+}
+
+#info {
+  width: 40%;
+  margin:auto;
+  text-align: justify;
+}
+
+#info p {
+  line-height: 200%;
+  font-size: 90%;
+}
+
+#info h1 {
+  margin-bottom: 3%;
+  font-weight: 400;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+
+  .display-row {
+    flex-direction: column;
+  }
+  
+  .formContainer {
+    /* position: fixed;
+    bottom: 0; */
+    position: relative;
+    padding-bottom: 3%;
+    width: 80%; 
+    margin: auto;
+  }
+
+  .container {
+    width: 100%; 
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .instructions {
+    text-align: center;
+    font-size: 60%;
+  }
+
+  .open-letters {
+    margin-top: 20px;
+    width: 80%;
+    margin:auto;
+  }
+
+  .letters {
+    width: 80%;
+  }
+
+  #wordName, #wordDef, #wordSpeech, #wordOff, #thoughts, #regards {
+    font-size: 100%;
+    text-align: center;
+  }
+
+  #wordDef, #wordOff, #wordSpeech {
+    font-size: 80%;
+  }
+
+  button {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  
+    color: gray;
+    border: solid lightgray 1px;
+    border-radius: 5px;
+    font-size: 50%;
+  }
+
+  textarea::placeholder {
+    color: lightgray;  
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50%;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  #regards {
+    margin-bottom: 10%;
+  }
+
+  .wordCont {
+    z-index: -3;
+  }
+
+  #info {
+    font-size: 80%;
+    width: 80%
+  }
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* .display-row {
+    flex-direction: column;
+  } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+
+} */
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */ 
